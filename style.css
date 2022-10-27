@@ -19,6 +19,7 @@ h2 {
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    
   }
 
 p {
@@ -32,26 +33,25 @@ p {
 
 img {
     height: 8rem;
-    width: 10rem;
+    width: 8rem;
     display: block;
     margin: auto;
-    border-radius: 3rem;
+    border-radius: 50%;
     border: solid;
     border: rgb(222, 39, 19);
 }
 
+#social { 
+  margin: 15px; padding: 10px;
+  background:gainsboro; 
+  display:flexbox; padding: 2px;
+  text-align: center;
+  width: 40%;
+  align-self: center;
+  outline: dashed 2px black;
+  margin-left: 30%;
+  text-decoration-color: black;
 
-
-#social {
-  height: 8rem;
-    width: 10rem;
-    display: block;
-    margin: auto;
-    border-radius: 3rem;
-    border: solid;
-    border: rgb(222, 39, 19);
-    background-color: whitesmoke;
-    color: black;
 }
 
 #intro {
@@ -59,29 +59,112 @@ img {
 }
 
 #chemistry {
-  background-color: rgb(147, 221, 147);
-  border-radius: 10rem;
+  background-color: rgb(134, 192, 134);
+  width: 37.5%;
+  padding: 20px;
+  align-items: center;
+  outline: solid 2px black;
+  margin-left: 30%;
+  padding-top: 0;
+
+
 }
 
 #football {
-  background-color: rgb(134, 108, 158);
-  border-radius: 10rem;
+  background-color: white;
+  width: 40%;
+  padding-bottom: 20px;
+  outline: dashed 2px black;
+  margin-left: 30%
+ 
 
 }
 
 #swimming {
-  background-color: aqua;
-  border-radius: 10rem;
+  background-color: rgb(125, 158, 187);
+  width: 40%;
+  padding-bottom: 20px;
+  outline: dotted 2px black;
+  margin-left: 30%
 
 }
 
 #programming {
   background-color: grey;
-  border-radius: 10rem;
+  width: 40%;
+  padding-bottom: 20px;
+  outline: solid 2px black;
+  margin-left: 30%
 }
 
 #traveling {
   background-color: burlywood;
-  border-radius: 10rem;
+  width: 40%;
+  padding-bottom: 20px;
+  outline: dotted 2px black;
+  margin-left: 30%
 
+}
+
+h1 {
+	font-size: 35px;
+	color: green;
+	text-align: center;
+}
+
+.container {
+	text-align: center;
+	margin-top: 0 auto;
+  
+  
+}
+
+.btn {
+	background: none;
+	border: 1px solid green;
+	font-size: 20px;
+	padding: 10px 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	cursor: pointer;
+	margin: 10px;
+	transition: 1s ease-in-out;
+	position: relative;
+	overflow: hidden;
+  
+}
+
+
+.btn {
+  background-color: rgb(197, 145, 108);
+  outline: 100%;color: black;;
+}
+
+
+.btn:hover {
+	background-color: rgb(42, 20, 184);
+}
+
+.btn::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background: green;
+	z-index: -1;
+	transition: 1s ease;
+}
+
+.btn::before {
+	top: 0;
+	border-radius: 0 0 50% 50%;
+}
+
+.btn::before {
+	bottom: 0;
+	border-radius: 50% 50% 0 0;
+}
+
+.btn1:hover::before {
+	height: 180%;
 }
